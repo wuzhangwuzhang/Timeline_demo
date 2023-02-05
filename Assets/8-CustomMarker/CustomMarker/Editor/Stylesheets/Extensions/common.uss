@@ -1,0 +1,22 @@
+﻿CustomNotificationMarker
+{
+     width: 18px;
+     height: 18px;
+     background-image: resource("Assets/8-CustomMarker/CustomMarker/Editor/flag_normal.png");
+}
+
+/* Active Marker State -> Corresponds to GUIStyle.onNormal */
+CustomNotificationMarker:checked
+{
+    width: 18px;
+    height: 18px;
+    background-image: resource("Assets/8-CustomMarker/CustomMarker/Editor/flag_normal.png");
+}
+
+/* Selected Marker State -> Corresponds to GUIStyle.onFocused */
+CustomNotificationMarker:hover:focus:checked
+{
+    width: 36px;
+    height: 36px;
+    background-image: resource("Assets/8-CustomMarker/CustomMarker/Editor/flag_select.png");
+}
