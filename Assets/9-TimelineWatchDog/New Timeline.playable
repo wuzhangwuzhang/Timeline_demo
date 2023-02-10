@@ -275,6 +275,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da74b765542c41a7bc4ba8d0c4d63770, type: 3}
   m_Name: CustomWatchDogClip
   m_EditorClassIdentifier: 
+--- !u!114 &-3423909334006850777
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eecfe862bbf41524cb9c5953f0f3d45c, type: 3}
+  m_Name: PathMoveClip
+  m_EditorClassIdentifier: 
+  tweenPathEditor:
+    exposedName: 0d451e84ea4f5ae42b383922db17ec26
+    defaultValue: {fileID: 0}
+  wayPoints:
+  - {x: -5.622754, y: 0, z: 11.728378}
+  - {x: -3.0013375, y: 0.046408832, z: 11.660101}
+  - {x: -3.0194697, y: 0.09403384, z: 10.121948}
+  - {x: -1.1230862, y: 0.09339273, z: 10.085829}
+  bindingTarget: {fileID: 0}
 --- !u!114 &-3173115121752893378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -327,11 +348,13 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: -7838043209407153992}
   - {fileID: 1522317486932314351}
+  - {fileID: 3915177032674197208}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
+    m_ScenePreview: 1
   m_DurationMode: 0
-  m_MarkerTrack: {fileID: 0}
+  m_MarkerTrack: {fileID: 7778865197382698186}
 --- !u!114 &114379194443415141
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -838,6 +861,98 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da74b765542c41a7bc4ba8d0c4d63770, type: 3}
   m_Name: CustomWatchDogClip(Clone)(Clone)
   m_EditorClassIdentifier: 
+--- !u!114 &3915177032674197208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988cf49b595671a42a19c8077907bf4c, type: 3}
+  m_Name: Path Move Track
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 0.3333333333333333
+    m_ClipIn: 0
+    m_Asset: {fileID: -3423909334006850777}
+    m_Duration: 1.3833333333333333
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 3915177032674197208}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: PathMoveClip
+  m_Markers:
+    m_Objects: []
 --- !u!114 &4056647999214466537
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -874,6 +989,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da74b765542c41a7bc4ba8d0c4d63770, type: 3}
   m_Name: CustomWatchDogClip
   m_EditorClassIdentifier: 
+--- !u!114 &7778865197382698186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a16748d9461eae46a725db9776d5390, type: 3}
+  m_Name: Markers
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!114 &8267436672310841743
 MonoBehaviour:
   m_ObjectHideFlags: 1
