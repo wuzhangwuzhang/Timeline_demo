@@ -34,6 +34,17 @@ public class TimelineWatchDogTest : MonoBehaviour
                     }
                     break;
                 }
+                case PathMoveTrack pathMoveTrack:
+                {
+                    var timelineClips = pathMoveTrack.GetClips();
+                    foreach (var timelineClip in timelineClips)
+                    {
+                        PathMoveClip customWatchDogClip = timelineClip.asset as PathMoveClip;
+                        customWatchDogClip.SetPlayableDirector(playableDirector);
+                        customWatchDogClip.SetTime(timelineClip.start, timelineClip.end);
+                    }
+                    break;
+                }
             }
         }
     }

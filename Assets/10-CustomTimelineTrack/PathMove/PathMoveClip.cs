@@ -9,7 +9,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class PathMoveClip : PlayableAsset
+public class PathMoveClip : WatchableClip
 {
     [Header("编辑器下TWeenPath编辑工具")]
     public ExposedReference<DOTweenPath> tweenPathEditor;
@@ -28,7 +28,12 @@ public class PathMoveClip : PlayableAsset
         PathMoveBehaviour behaviour = playable.GetBehaviour();
         behaviour.WayPoints = wayPoints;
         behaviour.TargetTrans = bindingTarget;
-        behaviour.displayName = displayName;
+		behaviour.AddWatch(PlayableDirector, StartTime, EndTime,ClipName);
         return playable;
+    }
+    
+    public void SetPlayableDirector(PlayableDirector playableDirector)
+    {
+        this.PlayableDirector = playableDirector;
     }
 }

@@ -40,9 +40,10 @@ public static class PlayableWatcher
 
     public static void Remove(WatchableCustomPlayableBehaviour customPlayableBehaviour)
     {
-        PlayableBehavioursToRemove.Add(customPlayableBehaviour);
+        PlayableBehavioursToRemove.Remove(customPlayableBehaviour);
     }
     
+
     [DefaultExecutionOrder(9999)]
     class PlayableWatcherUpdater : MonoBehaviour
     {
