@@ -33,6 +33,7 @@ public class PathMoveBehaviour : WatchableCustomPlayableBehaviour
     /// </summary>
     public override void OnWatchStart()
     {
+        Debug.Log("* PathMoveBehaviour OnWatchStart,Enter PathMoveClip!!");
         DoAction();
     }
 
@@ -42,7 +43,7 @@ public class PathMoveBehaviour : WatchableCustomPlayableBehaviour
     /// </summary>
     public override void OnWatchComplete()
     {
-        
+        Debug.Log("* PathMoveBehaviour OnWatchComplete,Exit PathMoveClip!!");
     }
 
     private void DoAction()
